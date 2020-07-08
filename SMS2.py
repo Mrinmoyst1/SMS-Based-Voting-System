@@ -17,7 +17,7 @@ def thingspeak_post(x,y,z):
     threading.Timer(15,thingspeak_post).start()
     
     URl='https://api.thingspeak.com/update?api_key='
-    KEY='7F235N7O3GMIX50Z'
+    KEY='7F235N7O3*****'
     HEADER='&field1={}&field2={}&field3={}'.format(x,y,z)
     NEW_URL = URl+KEY+HEADER
     print(NEW_URL)
@@ -40,8 +40,8 @@ C = 0
 
 ser = serial.Serial('COM3',baudrate = 115200, timeout=1)
 
-account_sid = 'AC1ec064cdf4480fc5826b8805480d0f0c'
-auth_token = '2d7bcf34b93b21ad3b916f3a42f32d72'
+account_sid = 'AC1ec064cdf4480fc5826b8******'
+auth_token = '2d7bcf34b93b21ad3b916*******'
 client = Client(account_sid, auth_token)
 
 
@@ -49,9 +49,9 @@ client = Client(account_sid, auth_token)
 
 try:
     connection = psycopg2.connect(user = "postgres",
-                                  password = "Mst97742",
+                                  password = "*****",
                                   host = "localhost",
-                                  port = "5432",
+                                  port = "****",
                                   database = "Vot4u")
                                                            
    
@@ -132,7 +132,7 @@ while 1:
                                     message = client.messages \
                                                     .create(
                                                          body= "You have successfully voted on the test SMS voting platform 'Vot4u' ",
-                                                         from_='+15104004561',
+                                                         from_='+1510400****',
                                                          to=a[1]
                                                      )
                                     #print(message.sid)                 
@@ -144,7 +144,7 @@ while 1:
                                     message = client.messages \
                                                     .create(
                                                          body="Several attempts. Please use a valid NID no. and a valid phone number to vote on the test SMS voting platform 'Vot4u' ",
-                                                         from_='+15104004561',
+                                                         from_='+1510400****',
                                                          to=a[1]
                                                      )
                                    # print(message.sid)                                                           
@@ -166,7 +166,7 @@ while 1:
                                     message = client.messages \
                                                     .create(
                                                          body="You have successfully voted on the test SMS voting platform 'Vot4u' ",
-                                                         from_='+15104004561',
+                                                         from_='+1510400****',
                                                          to=a[1]
                                                      )
                                    # print(message.sid)
@@ -179,7 +179,7 @@ while 1:
                                     message = client.messages \
                                                     .create(
                                                          body="Several attempts. Please use a valid NID no. and a valid phone number to vote on the test SMS voting platform 'Vot4u' ",
-                                                         from_='+15104004561',
+                                                         from_='+1510400****',
                                                          to=a[1]
                                                      )
                                    # print(message.sid)                                                          
@@ -200,7 +200,7 @@ while 1:
                                     message = client.messages \
                                                     .create(
                                                          body="You have successfully voted on the test SMS voting platform 'Vot4u' ",
-                                                         from_='+15104004561',
+                                                         from_='+1510400****',
                                                          to=a[1]
                                                      )
                                    # print(message.sid)
@@ -213,7 +213,7 @@ while 1:
                                     message = client.messages \
                                                     .create(
                                                          body="Several attempts. Please use a valid NID no. and a valid phone number to vote on the test SMS voting platform 'Vot4u' ",
-                                                         from_='+15104004561',
+                                                         from_='+1510400****',
                                                          to=a[1]
                                                      )
                                    # print(message.sid)                                                          
@@ -228,7 +228,7 @@ while 1:
                            message = client.messages \
                                                     .create(
                                                          body="Invalid voting option. Please type A, B or C to vote on 'Vot4u'",
-                                                         from_='+15104004561',
+                                                         from_='+1510400****',
                                                          to=a[1]
                                                      )
                            #print(message.sid)
@@ -247,7 +247,7 @@ while 1:
             message = client.messages \
                             .create(
                                  body="You aren't a voter. Please register as a voter next time. -Regards 'Vot4u'",
-                                 from_='+15104004561',
+                                 from_='+1510400****',
                                  to=a[1]
                              )
            # print(message.sid)
@@ -265,7 +265,7 @@ while 1:
         message = client.messages \
                         .create(
                             body="Please use your registered phone number to vote on the test SMS voting platform 'Vot4u'",
-                            from_='+15104004561',
+                            from_='+1510400****',
                             to=a[1]
                          )
        # print(message.sid)
@@ -278,7 +278,7 @@ while 1:
         message = client.messages \
                         .create(
                             body="You aren't a voter. Please register as a voter next time. -Regards 'Vot4u'",
-                            from_='+15104004561',
+                            from_='+1510400****',
                             to=a[1]
                          )
       #  print(message.sid)
