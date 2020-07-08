@@ -1,5 +1,4 @@
-# Code-Horizon
-SMS based advanced voting system using Python and NodeMCU
+#SMS based advanced voting system using Python and NodeMCU
 This project was actually done for competing in the intra-departmental project competition and the project got first prize. 
 You will need:
 1. Python for main code
